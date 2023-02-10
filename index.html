@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <title>6 квартира</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="https://kvartiry.github.io/rich-house/">
+                    <img class="brand-logo" src="./logo.png">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <div class="about">
+                    <button class="about-btn" id="about">О нас</button>
+                </div>
+                <div class="flats">
+                  <a href="https://kvartiry.github.io/rich-house/#flats-page">
+                    <button class="flats-btn">Квартиры</button>
+                  </a>
+                </div>
+                <div class="languages">
+                    <a href="https://kvartiry.github.io/rich-6-kz/">
+                        <button class="lang-button"><img class="kzicon" src="./kazakhstan.png"></button>
+                    </a>
+                    </div>
+            </div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" id="menu__btn"  for="menu__toggle">
+                  <span id="span"></span>
+                </label>
+                
+                <ul class="menu__box" id="menu__box">
+                    <a href="https://kvartiry.github.io/rich-house/">
+                        <img class="logo-mobile" src="./logo.png">
+                    </a>
+                    <br>
+                        <li><a class="menu__item" id="aboutses">О нас</a></li>
+                        <li><a class="menu__item" href="https://kvartiry.github.io/rich-house/#flats-page" id="flats-btn" >Квартиры</a></li>
+                        <br>
+                        <li><a href="https://kvartiry.github.io/rich-6-kz/">
+                          <img class="kzicon-mobile" src="./kazakhstan.png">
+                        </a></li>
+                </ul>
+              </div>
+        </div>
+    </header>
+
+    <br>
+
+    <div id="slides" class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./1.jpg" style="width:355px">
+          </div>
+          <div class="mySlides fade">
+            <img src="./2.jpeg" style="width:355px">
+          </div>
+          <div class="mySlides fade">
+            <img src="./3.jpeg" style="width:355px">
+          </div>
+          <div class="mySlides fade">
+              <img src="./4.jpg" style="width:355px">
+          </div>
+          <div class="mySlides fade">
+              <img src="./5.png" style="width:355px">
+          </div>
+        <div class="prev-next">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+    </div>
+
+    <br>
+
+    <div class="address">
+        <div class="address-content">
+            <div class="address-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>
+                  <span>Бухар-Жырау 79</span>
+            </div>
+            <div class="city-text">
+                <span>Караганда, Казыбекбийский район</span>
+            </div>
+            <br>
+            <div class="button-support">
+                <div class="support-content">
+                    <a href="tel:+77013255940">
+                        <button class="callbtn">Позвонить</button>
+                    </a>
+                    <a href="https://wa.me/+77013255940" target="_blank">
+                        <button class="typingbtn">Написать</button>
+                    </a>
+                </div>
+                <br>
+                <div class="wifi">
+                    <button class="wifibtn" id="wifibtn">WI-FI</button>
+                </div>
+            </div>
+            <div class="flat-information">
+                <h1>О квартире</h1>
+                <div class="information">
+                    <div class="floor">
+                        <span class="info-name">Этаж</span>
+                        <span class="info-res1">1 из 5</span>
+                    </div>
+                    <div class="square">
+                        <span class="info-name">Площадь, м<sup><small>2</small></sup></span>
+                        <span class="info-res2">37 м<sup><small>2</small></sup></span>
+                    </div>
+                    <div class="furniture">
+                        <span class="info-name">Квартира мебелирована</span>
+                        <span class="info-res3">да</span>
+                    </div>
+                    <div class="security">
+                        <span class="info-name">Безопасность</span>
+                        <span class="info-res4">домофон</span>
+                    </div>
+                    <div class="vetements">
+                        <span class="info-name">Мебель</span>
+                        <span class="info-res5">wi-fi,<br>кровать,<br>обеденный стол,<br>шкаф для одежды,<br>кухонный стол,<br>диван</span>
+                    </div>
+                    <div class="convenience">
+                        <span class="info-name">Удобство</span>
+                        <span class="info-res6">телевизор,<br>стиральная машина,<br><span class="fridge">холодильник,</span><br><span class="microwave">микроволновая печь,</span><br>посуда</span>
+                    </div>
+                    <div class="bath">
+                        <span class="info-name">Санузел</span>
+                        <span class="info-res7">совмещен</span>
+                    </div>
+                    <div class="balcon">
+                        <span class="info-name">Балкон</span>
+                        <span class="info-res8">нет</span>
+                    </div>
+                    <div class="status-flat">
+                        <span class="info-name">Статус квартиры</span>
+                        <span class="info-res9">свежий ремонт</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+     
+    <div class="map">
+        <div class="map-content">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A615c36376666e8b31cc75de146e562061228eab711cc1812e202581097170dd9&amp;source=constructor" width="1000" height="240" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="social-medias">
+                <a href="https://www.instagram.com/richhouse.kz/"><img src="./instagram.png"></a>
+                <a href="https://wa.me/+77013255940"><img src="./whatsapp.png"></a>
+                <a href="tel:77013255940"><img src="./telegram.png"></a>
+              </div>
+          <br>
+          <div class="creator">
+            <a href="https://www.instagram.com/jaicode/">
+            <img class="jaicode" src="./jaicode.png" alt="">
+            </a>
+        </div>
+        </div>
+      </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
